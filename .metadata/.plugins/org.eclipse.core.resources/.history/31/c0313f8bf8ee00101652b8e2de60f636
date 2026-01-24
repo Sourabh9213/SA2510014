@@ -1,0 +1,28 @@
+package SeleniumAssinment;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Ass19 {
+
+	public static void main(String[] args) {
+		WebDriver driver = new EdgeDriver();
+		String URL = "https://testautomationpractice.blogspot.com/?m=1";
+		driver.manage().window().maximize();
+		driver.get(URL);
+		
+		driver.findElement(By.id("name")).sendKeys("sourabh	");
+		driver.findElement(By.id("email")).sendKeys("sourabh9213@gmail.com");
+		driver.findElement(By.id("phone")).sendKeys("7877878787");
+		driver.findElement(By.id("textarea")).sendKeys("kolhapur 416002");	
+		driver.findElement(By.id("male")).click();
+		
+		
+
+	}
+
+}
