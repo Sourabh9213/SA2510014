@@ -1,0 +1,16 @@
+git pull origin main
+git add .
+git commit -m "update"
+git push origin main
+
+
+1 Repo download (first time only)
+ git clone url
+
+2 Step 2 — Folder मध्ये जा
+cd repo-name
+
+आधीच project आहे PC मध्ये → latest changes घ्यायचे असतील
+तेव्हा हो ✔️ git pull पुरेसं आहे
+
+git pull origin main
