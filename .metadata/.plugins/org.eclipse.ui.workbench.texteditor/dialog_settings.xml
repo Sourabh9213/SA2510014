@@ -4,7 +4,11 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="true"/>
 		<list key="findhistory">
+			<item value="Contries"/>
 			<item value="cssSelector"/>
+		</list>
+		<list key="replacehistory">
+			<item value="Countries"/>
 		</list>
 	</section>
 </section>

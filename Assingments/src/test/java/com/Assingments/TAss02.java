@@ -1,4 +1,4 @@
-package Assingments.Assingments;
+package com.Assingments;
 
 import java.time.Duration;
 

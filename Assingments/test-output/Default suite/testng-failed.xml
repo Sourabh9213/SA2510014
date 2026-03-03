@@ -3,18 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Assingments.Assingments.TAss01">
+      <class name="Assingments.Assingments.TAss04">
         <methods>
-          <include name="Downloads"/>
-          <include name="Documentation"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="Projects"/>
-          <include name="Support"/>
-          <include name="beforeMethod"/>
+          <include name="CreateExcel" invocation-numbers="4"/>
         </methods>
-      </class> <!-- Assingments.Assingments.TAss01 -->
+      </class> <!-- Assingments.Assingments.TAss04 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
