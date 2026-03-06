@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 public class Assignment03 {
 //	3. Write a WebDriver script to handle a dropdown and select an option based on specific criteria.	
 
-	public static void main(String[] args) throws InterruptedException, IOException {
+	public static void main(String[] args) throws  IOException {
 
 		WebDriver driver = new ChromeDriver();
 		UtilityClass TakeSS = new UtilityClass(driver);
@@ -26,23 +26,23 @@ public class Assignment03 {
 		Countries.selectByIndex(7);
 		System.out.println("Country is Selected By IndexNO: " + Countries.getFirstSelectedOption().getText());		
 		TakeSS.ScreenShot("IndexNO");
-		Thread.sleep(2000);
+	
 		
 		Countries.selectByContainsVisibleText("Jap");
 		System.out.println("Country is Selected By ContainsVisible: " + Countries.getFirstSelectedOption().getText());				
 		TakeSS.ScreenShot("ContainsVisibleText");
-		Thread.sleep(2000);
+		
 		
 		Countries.selectByValue("canada");
 		System.out.println("Country is Selected By Value: " + Countries.getFirstSelectedOption().getText());				
 		TakeSS.ScreenShot("ByValue");
-		Thread.sleep(2000);
+		
 		
 		Countries.selectByVisibleText("India");
 		System.out.println("Country is Selected By VisibleText: " + Countries.getFirstSelectedOption().getText());		
 		
 		TakeSS.ScreenShot("VisibleText");
-		Thread.sleep(2000);
+		
 		
 		driver.quit();
 

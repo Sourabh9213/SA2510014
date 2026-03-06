@@ -31,15 +31,16 @@ public class Assignment05 {
 		driver.manage().window().maximize();
 		driver.findElement(By.cssSelector("input[id=\"username\"]")).sendKeys("student");
 		driver.findElement(By.cssSelector("input[id=\"password\"]")).sendKeys("Password123");
-		driver.findElement(By.cssSelector("button[id=\"submit\"]")).click();
 		TakeSS(driver,"SS01");
+		driver.findElement(By.cssSelector("button[id=\"submit\"]")).click();
+		TakeSS(driver,"SS02");
 		WebElement MSG = driver.findElement(By.cssSelector("h1[class^=\"post\"]"));		
 
 		System.out.println("Login Success :  " + MSG.getText());
 		
 		driver.findElement(By.partialLinkText("Log out")).click();
 		
-		TakeSS(driver,"SS02");
+		TakeSS(driver,"SS03");
 		System.out.println("SS Takes Sussesfully");
 		
 		driver.quit();

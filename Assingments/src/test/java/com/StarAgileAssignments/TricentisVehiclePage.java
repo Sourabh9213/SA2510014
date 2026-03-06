@@ -26,17 +26,17 @@ public class TricentisVehiclePage {
 	}
 
 	public void DateOfManufacture(String DD, String MM, String YYYY) {
-		driver.findElement(By.id("")).sendKeys(DD + "/" + MM + "/" + YYYY);
+		driver.findElement(By.cssSelector("input[id='dateofmanufacture']")).sendKeys(DD + "/" + MM + "/" + YYYY);
 	}
 
 	public void NumberOfSeats(String N) {
-		WebElement dropdown2 = driver.findElement(By.id(""));
+		WebElement dropdown2 = driver.findElement(By.id("numberofseats"));
 		Select SeatNo = new Select(dropdown2);
 		SeatNo.selectByVisibleText(N);
 			}
 	
 	public void FuelType(String fuel) {
-		WebElement dropdown2 = driver.findElement(By.id(""));
+		WebElement dropdown2 = driver.findElement(By.id("fuel"));
 		Select FUEL = new Select(dropdown2);
 		List<WebElement> Options = FUEL.getOptions();
 		for (int i = 0; i < Options.size(); i++) {
@@ -48,15 +48,15 @@ public class TricentisVehiclePage {
 	}
 
 	public void ListPrice(String Price) {
-		driver.findElement(By.id("")).sendKeys(Price);
+		driver.findElement(By.id("listprice")).sendKeys(Price);
 	}
 
 	public void LicensePlateNo(String NoPlate) {
-		driver.findElement(By.id("")).sendKeys(NoPlate);
+		driver.findElement(By.xpath("//label[contains(text(),'License Plate Number')]")).sendKeys(NoPlate);
 	}
 
 	public void AnnualMileage(String Mileage) {
-		driver.findElement(By.id("")).sendKeys(Mileage);
+		driver.findElement(By.xpath("//label[contains(text(),'Annual')]")).sendKeys(Mileage);
 	}
 
 }
